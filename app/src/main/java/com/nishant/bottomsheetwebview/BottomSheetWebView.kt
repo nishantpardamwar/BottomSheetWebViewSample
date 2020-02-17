@@ -52,7 +52,7 @@ class BottomSheetWebView(context: Context) : FrameLayout(context) {
     private fun setupWebView() {
         webView.onScrollChangedCallback = object : ObservableWebView.OnScrollChangeListener {
             override fun onScrollChanged(l: Int, t: Int, oldl: Int, oldt: Int) {
-                currentWebViewScrollY = t
+                mCurrentWebViewScrollY = t
             }
         }
     }
